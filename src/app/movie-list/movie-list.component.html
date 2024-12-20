@@ -1,0 +1,9 @@
+<section class="movie-list">
+  <h2>Populares na Netflix</h2>
+  <div class="carousel">
+    <div class="movie-card" *ngFor="let movie of movies">
+      <img [src]="movie.image" [alt]="movie.title">
+      <h3>{{ movie.title }}</h3>
+    </div>
+  </div>
+</section>
